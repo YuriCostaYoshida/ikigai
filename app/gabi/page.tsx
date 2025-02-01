@@ -1,6 +1,7 @@
 'use client'
 import { ShimmerButton } from "@/components/ui/shimmer-button"
 import { TypingAnimation } from "@/components/ui/typing-animation"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 export default function page() {
@@ -25,11 +26,13 @@ export default function page() {
 
             {show ? (
                 <>
-                    <ShimmerButton className="shadow-2xl">
-                        <span className="font-bold rounded-md text-2xl whitespace-pre-wrap text-center leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                            Proxima etapa
-                        </span>
-                    </ShimmerButton>
+                    <Link href={'/scratch'}>
+                        <ShimmerButton className="shadow-2xl">
+                            <span className="font-bold rounded-md text-2xl whitespace-pre-wrap text-center leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                Proxima etapa
+                            </span>
+                        </ShimmerButton>
+                    </Link>
                 </>
             ) : (
                 null
