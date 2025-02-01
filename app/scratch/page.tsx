@@ -7,7 +7,7 @@ export default function page() {
     };
 
     return (
-        <main className="flex justify-center items-center h-screen flex-col gap-2">
+        <main className="flex justify-center items-center h-screen flex-col gap-2 overflow-hidden">
 
             <ScratchToReveal
                 width={250}
